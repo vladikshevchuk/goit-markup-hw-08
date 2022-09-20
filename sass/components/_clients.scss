@@ -1,0 +1,31 @@
+.company-box {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+
+    li {
+        width: 170px;
+        margin-right: 30px;
+    }
+}
+
+.company-logo {
+    fill: currentColor;
+}
+
+.company {
+    display: block;
+    width: 170px;
+    height: 92px;
+    outline: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: $accentColor;
+        outline: 1px solid $accentColor;
+    }
+}

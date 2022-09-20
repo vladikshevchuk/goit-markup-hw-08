@@ -1,0 +1,33 @@
+.contacts a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $primeryTextColor;
+}
+
+.contacts {
+    margin-left: auto;
+    color: $primeryTextColor;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .link+.link {
+        margin-left: 30px;
+    }
+
+    .link:hover,
+    .link:focus {
+        color: $accentColor;
+    }
+}
+
+.envelope {
+    margin-right: 10px;
+    margin-left: 30px;
+    fill: currentColor;
+}

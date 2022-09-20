@@ -1,0 +1,151 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+}
+
+.container-footer {
+    display: flex;
+}
+
+.add {
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.add h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $herofooterColor;
+}
+
+.add-icon {
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.add .button {
+    margin-right: 10px;
+    padding: 0;
+    border: 0;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+        cursor: pointer;
+    }
+}
+
+.add .button-icon {
+    fill: $herofooterColor;
+}
+
+.address-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: $herofooterColor;
+
+    a {
+        margin-top: 9px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* Подпишись на рассылку */
+
+footer form {
+    display: flex;
+    margin-left: auto;
+}
+
+.form-mail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+}
+
+.form-mail label {
+    margin-bottom: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $herofooterColor;
+}
+
+.form-mail input {
+    box-sizing: border-box;
+
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    &::placeholder {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            /* identical to box height, or 125% */
+    
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+footer .submit {
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    margin-top: 49px;
+    padding: 10px 29px;
+    border: 0;
+
+    background: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 16px;
+    /* identical to box height, or 188% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $herofooterColor;
+
+    cursor: pointer;
+}
+
+footer .submit .icon-send {
+    margin-left: 10px;
+}
