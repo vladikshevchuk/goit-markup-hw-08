@@ -197,18 +197,14 @@ p {
 }
 
 .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 0;
   margin-bottom: 0;
 }
-@media screen and (min-width: 1200px) {
-  .about-us {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .about-us .item + .item {
-    margin-left: 30px;
-  }
+.about-us .item + .item {
+  margin-left: 30px;
 }
 
 .icon-antenna {

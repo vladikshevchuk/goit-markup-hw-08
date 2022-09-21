@@ -1,10 +1,14 @@
 .about-us {
-    display: flex;
     padding-left: 0;
     margin-bottom: 0;
 
-    .item+.item {
-        margin-left: 30px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+
+        .item+.item {
+            margin-left: 30px;
+        }
     }
 }
 
