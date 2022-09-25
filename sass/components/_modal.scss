@@ -34,6 +34,11 @@
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 1199px) {
+        min-width: 450px;
+        min-height: 609px;
+    }
 }
 
 .backdrop .button {
@@ -64,6 +69,8 @@
 .modal-info h2 {
     margin-top: 40px;
     margin-bottom: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -74,6 +81,10 @@
     letter-spacing: 0.03em;
 
     color: $seconderyTextColor;
+
+    @media screen and (max-width: 767px) {
+        line-height: 30px;
+    }
 }
 
 .modal-info .data {
@@ -102,6 +113,10 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+        width: 370px;
+    }
 }
 
 input:active,
@@ -190,6 +205,10 @@ input:active,
         
         color: rgba(117, 117, 117, 0.5);
     }
+
+    @media screen and (max-width: 767px) {
+        width: 370px;
+    }
 }
 
 
@@ -242,6 +261,11 @@ input:checked+.checkbox-icon {
     letter-spacing: 0.03em;
 
     color: $primeryTextColor;
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 .modal-info .policy label a {
@@ -256,6 +280,11 @@ input:checked+.checkbox-icon {
     text-decoration-line: underline;
 
     color: $accentColor;
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 .modal-info button {

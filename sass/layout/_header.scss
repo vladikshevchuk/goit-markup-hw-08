@@ -5,4 +5,29 @@
 .main-nav {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+        height: 60px;
+    }
+}
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
 }

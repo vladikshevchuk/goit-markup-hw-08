@@ -83,6 +83,36 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .main-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 60px;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -940,6 +970,12 @@ footer .submit .icon-send {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
 
 .backdrop .button {
   position: fixed;
@@ -972,6 +1008,8 @@ footer .submit .icon-send {
 .modal-info h2 {
   margin-top: 40px;
   margin-bottom: 12px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -980,6 +1018,11 @@ footer .submit .icon-send {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .modal-info h2 {
+    line-height: 30px;
+  }
 }
 
 .modal-info .data {
@@ -1011,6 +1054,11 @@ footer .submit .icon-send {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .modal-info .data input {
+    width: 370px;
+  }
 }
 
 input:active,
@@ -1137,6 +1185,11 @@ input:active,
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+@media screen and (max-width: 767px) {
+  .modal-info .data textarea {
+    width: 370px;
+  }
+}
 
 .modal-info .policy {
   display: -webkit-box;
@@ -1186,6 +1239,12 @@ input:checked + .checkbox-icon {
   letter-spacing: 0.03em;
   color: #757575;
 }
+@media screen and (max-width: 767px) {
+  .modal-info .policy label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 .modal-info .policy label a {
   font-family: "Roboto";
@@ -1198,6 +1257,12 @@ input:checked + .checkbox-icon {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
+}
+@media screen and (max-width: 767px) {
+  .modal-info .policy label a {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .modal-info button {
