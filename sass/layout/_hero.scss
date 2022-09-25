@@ -14,18 +14,35 @@
     margin-top: 0;
     margin-bottom: 30;
     padding-top: 200px;
-    padding-left: 237px;
-    padding-right: 237px;
+    // padding-left: 237px;
+    // padding-right: 237px;
 
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    /* or 136% */
+    font-size: 26px;
+    line-height: 1.62;
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 189px;
+        margin-right: 189px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+
+        margin-left: 237px;
+        margin-right: 237px;
+    }
 }
 
 .button-hero {

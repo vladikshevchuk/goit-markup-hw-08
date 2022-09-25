@@ -21,10 +21,14 @@
 }
 
 .div-button-portfolio {
-    display: flex;
-    justify-content: center;
-
-    .button-portfolio+.button-portfolio {
-            margin-left: 8px;
+    .button-portfolio {
+            margin-right: 8px;
+            margin-bottom: 15px;
         }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
 }

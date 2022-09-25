@@ -18,9 +18,18 @@
 
 .social {
     display: flex;
+    justify-content: center;
+    padding-inline-start: 0px;
     margin-top: 20px;
-    padding-left: 32px;
-    margin-bottom: 30px;
+    // padding-left: 32px;
+
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+    } 
 
     .social-icon {
         margin: auto;

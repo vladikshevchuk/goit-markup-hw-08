@@ -1,3 +1,9 @@
+.wwd-hidden {
+    @media screen and (max-width: 1199px){
+        display: none;
+    }
+}
+
 .what-we-do {
     display: flex;
     margin-top: 50px;
@@ -43,15 +49,4 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
-}
-
-.our-team-ul {
-    display: flex;
-    margin-top: 50px;
-    padding-left: 0;
-    margin-bottom: 0;
-}
-
-.our-team-ul .item+.item {
-    margin-left: 30px;
 }
