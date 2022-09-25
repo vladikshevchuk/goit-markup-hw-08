@@ -1019,7 +1019,7 @@ footer .submit .icon-send {
   letter-spacing: 0.03em;
   color: #212121;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-info h2 {
     line-height: 30px;
   }
@@ -1055,7 +1055,7 @@ footer .submit .icon-send {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-info .data input {
     width: 370px;
   }
@@ -1185,7 +1185,7 @@ input:active,
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-info .data textarea {
     width: 370px;
   }
@@ -1239,7 +1239,7 @@ input:checked + .checkbox-icon {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-info .policy label {
     font-size: 12px;
     line-height: 14px;
@@ -1258,7 +1258,7 @@ input:checked + .checkbox-icon {
           text-decoration-line: underline;
   color: #2196F3;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-info .policy label a {
     font-size: 12px;
     line-height: 14px;

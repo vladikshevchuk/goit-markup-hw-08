@@ -82,7 +82,7 @@
 
     color: $seconderyTextColor;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         line-height: 30px;
     }
 }
@@ -114,7 +114,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         width: 370px;
     }
 }
@@ -206,7 +206,7 @@ input:active,
         color: rgba(117, 117, 117, 0.5);
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         width: 370px;
     }
 }
@@ -262,7 +262,7 @@ input:checked+.checkbox-icon {
 
     color: $primeryTextColor;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         font-size: 12px;
         line-height: 14px;
     }
@@ -281,7 +281,7 @@ input:checked+.checkbox-icon {
 
     color: $accentColor;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         font-size: 12px;
         line-height: 14px;
     }
