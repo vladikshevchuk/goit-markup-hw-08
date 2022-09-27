@@ -2,10 +2,16 @@
     border-bottom: 1px solid #ECECEC;
 }
 
+.page-header {
+    position: relative;
+}
+
 .main-nav {
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
+
+    
 
     @media screen and (max-width: 767px) {
         justify-content: space-between;
@@ -14,17 +20,24 @@
 }
 
 .menu-container {
-    display: none;
+    @media screen and (max-width: 767px) {
+        display: none;
 
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        
+        background-color: #FFFFFF;
 
-    background-color: #FFFFFF;
+        &.is-open {
+            display: block;
+        }
+    }
 
-    &.is-open {
-        display: block;
+    @media screen and (min-width: 768px) {
+        display: flex;
+                justify-content: space-between;
     }
 }
 
