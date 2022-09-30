@@ -132,6 +132,9 @@ p {
   border: none;
   background-color: transparent;
 }
+.menu-button:focus, .menu-button:hover {
+  fill: #2196F3;
+}
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
@@ -175,17 +178,24 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
-    margin-left: 93px;
     padding-left: 0;
   }
   .site-nav .item:not(:last-child) {
     margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-right: 305px;
   }
 }
 
@@ -209,15 +219,17 @@ p {
     line-height: 47px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav .link {
     position: relative;
+    padding-bottom: 32px;
+    padding-top: 32px;
     font-size: 14px;
     line-height: 1.14;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav .dedicated {
     color: #2196F3;
   }
@@ -239,13 +251,6 @@ p {
 } */
 .contacts a {
   color: #757575;
-  margin-top: 10px;
-}
-@media screen and (min-width: 1200px) {
-  .contacts a {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }
 
 .contacts {
@@ -297,9 +302,21 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 21px;
+    margin-top: 21px;
+    margin-left: 81px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .contacts .link-phone {
+    margin-top: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .contacts {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   .contacts .link + .link {
     margin-left: 30px;
   }
@@ -318,7 +335,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .envelope {
-    margin-left: 30px;
+    margin-left: 0px;
   }
 }
 

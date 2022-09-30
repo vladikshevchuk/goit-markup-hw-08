@@ -37,7 +37,7 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-                justify-content: space-between;
+        justify-content: space-between;
     }
 }
 
@@ -47,6 +47,11 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
+    &:focus,
+    &:hover {
+        fill: $accentColor;
+    }
 
     @media screen and(min-width: 768px) {
         display: none;
