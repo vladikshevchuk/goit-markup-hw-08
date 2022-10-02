@@ -20,6 +20,8 @@
 }
 
 .menu-container {
+    z-index: 1000;
+    
     @media screen and (max-width: 767px) {
         display: none;
 
@@ -68,4 +70,35 @@
 
 .menu-button.is-open .icon-menu {
     display: none;
+}
+
+.menu-link {
+    margin-left: 40px;
+    margin-top: 64px;
+    margin-bottom: 48px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    
+    letter-spacing: 0.02em;
+    
+    a {
+        color: #2196F3;
+    }
+    
+    a+a {
+        margin-left: 10px;
+        padding-left: 10px;
+
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+    }
+    
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
 }

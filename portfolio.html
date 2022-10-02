@@ -23,13 +23,13 @@
                     <span class="logo black">Studio</span>
                 </a>
     
-                <div class="menu-container is-open" id="menu-container" data-menu>
+                <div class="menu-container" id="menu-container" data-menu>
                     <ul class="site-nav">
                         <li class="item"><a href="index.html" class="link">Студия</a></li>
                         <li class="item"><a href="portfolio.html" class="link dedicated">Портфолио</a></li>
                         <li class="item"><a href="#" class="link">Контакты</a></li>
                     </ul>
-    
+                
                     <address class="contacts">
                         <a href="mailto:info@devstudio.com" class="link link-email">
                             <svg class="envelope" width="16px" height="12px">
@@ -43,10 +43,10 @@
                             +38 096 111 11 11</a>
                     </address>
                 </div>
-    
-                <button type="button" class="menu-button is-open" aria-expanded="fatse" aria-controls="menu-container"
-                    data-menu-button>
-                    <svg width="40px" height="40px" aria-label="переклбчатель мобильного меню">
+                
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
+                    aria-label="Мобильное меню" data-menu-button>
+                    <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
                         <use class="icon-cross" href="./images/symbol-defs_menu.svg#icon-close_24px"></use>
                         <use class="icon-menu" href="./images/symbol-defs_menu.svg#icon-menu_24px"></use>
                     </svg>
@@ -68,7 +68,15 @@
         <ul class="portfolio">
             <li class="item">
                 <div class="product">
-                    <img src="./images/technokrak.jpg" alt="Технокряк" width="370">
+                    <picture>
+                        <source srcset="./images/technokrak-370px.jpg 1x, ./images/technokrak-370px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/technokrak-354px.jpg 1x, ./images/technokrak-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/technokrak-450px.jpg 1x, ./images/technokrak-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/technokrak-450px.jpg" alt="Технокряк" />
+                    </picture>
                     <div class="action">
                         <p class="product-thumb">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -82,7 +90,13 @@
             </li>
             <li class="item">
                 <div class="product">
-                    <img src="./images/poster-busket.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                    <picture>
+                        <source srcset="./images/poster-busket-370px.jpg 1x, ./images/poster-busket-370px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/poster-busket-354px.jpg 1x, ./images/poster-busket-354px@2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/poster-busket-450px.jpg 1x, ./images/poster-busket-450px@2x.jpg 2x" media="(max-width: 767px)" />
+                        <img src="./images/poster-busket-450px.jpg" alt="Постер New Orlean vs Golden Star" />
+                    </picture>
                     <div class="action">
                         <p class="product-thumb">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -96,7 +110,15 @@
             </li>
             <li class="item">
                 <div class="product">
-                    <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370">
+                    <picture>
+                        <source srcset="./images/seafood-370px.jpg 1x, ./images/seafood-370px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/seafood-354px.jpg 1x, ./images/seafood-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/seafood-450px.jpg 1x, ./images/seafood-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/seafood-450px.jpg" alt="Ресторан Seafood" />
+                    </picture>
                     <div class="action">
                         <p class="product-thumb">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -110,7 +132,12 @@
             </li>
             <li class="item">
                 <div class="product">
-                    <img src="./images/projekt-prime.jpg" alt="Проект Prime" width="370">
+                    <picture>
+                        <source srcset="./images/projekt-prime-370px.jpg 1x, ./images/projekt-prime-370px@2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/projekt-prime-354px.jpg 1x, ./images/projekt-prime-354px@2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/projekt-prime-450px.jpg 1x, ./images/projekt-prime-450px@2x.jpg 2x" media="(max-width: 767px)" />
+                        <img src="./images/projekt-prime-450px.jpg" alt="Проект Prime" />
+                    </picture>
                     <div class="action">
                         <p class="product-thumb">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -124,7 +151,15 @@
             </li>
             <li class="item">
                 <div class="product">
-                    <img src="./images/projekt-boxes.jpg" alt="Проект Boxes" width="370">
+                    <picture>
+                        <source srcset="./images/projekt-boxes-370px.jpg 1x, ./images/projekt-boxes-370px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/projekt-boxes-354px.jpg 1x, ./images/projekt-boxes-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/projekt-boxes-450px.jpg 1x, ./images/projekt-boxes-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/projekt-boxes-450px.jpg" alt="Проект Boxes" />
+                    </picture>
                     <div class="action">
                         <p class="product-thumb">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -138,7 +173,15 @@
             </li>
             <li class="item">
                 <div class="product">
-                    <img src="./images/insp-n-borders.jpg" alt="Inspiration has no Borders" width="370">
+                    <picture>
+                        <source srcset="./images/insp-n-borders-370px.jpg 1x, ./images/insp-n-borders-370px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/insp-n-borders-354px.jpg 1x, ./images/insp-n-borders-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/insp-n-borders-450px.jpg 1x, ./images/insp-n-borders-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/insp-n-borders-450px.jpg" alt="Inspiration has no Borders" />
+                    </picture>
                     <div class="action">
                         <p class="product-thumb">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -152,7 +195,15 @@
             </li>
             <li class="item">
                 <div class="product">
-                    <img src="./images/lim-edition.jpg" alt="Издание Limited Edition" width="370">
+                    <picture>
+                        <source srcset="./images/lim-edition-370px.jpg 1x, ./images/lim-edition-370px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/lim-edition-354px.jpg 1x, ./images/lim-edition-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/lim-edition-450px.jpg 1x, ./images/lim-edition-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/lim-edition-450px.jpg" alt="Издание Limited Edition" />
+                    </picture>
                     <div class="action">
                         <p class="product-thumb">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -166,7 +217,15 @@
             </li>
             <li class="item">
                 <div class="product">
-                    <img src="./images/projekt-lab.jpg" alt="Проект LAB" width="370">
+                    <picture>
+                        <source srcset="./images/projekt-lab-370px.jpg 1x, ./images/projekt-lab-370px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/projekt-lab-354px.jpg 1x, ./images/projekt-lab-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/projekt-lab-450px.jpg 1x, ./images/projekt-lab-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/projekt-lab-450px.jpg" alt="ИПроект LAB" />
+                    </picture>
                     <div class="action">
                         <p class="product-thumb">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -180,7 +239,15 @@
             </li>
             <li class="item">
                 <div class="product">
-                    <img src="./images/growing-busines.jpg" alt="Growing Business" width="370">
+                    <picture>
+                        <source srcset="./images/growing-busines-370px.jpg 1x, ./images/growing-busines-370px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/growing-busines-354px.jpg 1x, ./images/growing-busines-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/growing-busines-450px.jpg 1x, ./images/growing-busines-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/growing-busines-450px.jpg" alt="Growing Business" />
+                    </picture>
                     <div class="action">
                         <p class="product-thumb">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю

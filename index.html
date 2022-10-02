@@ -21,7 +21,7 @@
                     <span class="logo black">Studio</span>
                 </a>
             
-                <div class="menu-container is-open" id="menu-container" data-menu>
+                <div class="menu-container" id="menu-container" data-menu>
                     <ul class="site-nav">
                         <li class="item"><a href="index.html" class="link dedicated">Студия</a></li>
                         <li class="item"><a href="portfolio.html" class="link">Портфолио</a></li>
@@ -40,11 +40,18 @@
                             </svg>
                             +38 096 111 11 11</a>
                     </address>
+
+                    <div class="menu-link">
+                        <a href="https://www.instagram.com/">Instagram</a>
+                        <a href="https://twitter.com/">Twitter</a>
+                        <a href="https://www.facebook.com/">Facebook</a>
+                        <a href="https://pl.linkedin.com/">LinkedIn</a>
+                    </div>
                 </div>
             
-                <button type="button" class="menu-button is-open" aria-expanded="fatse" aria-controls="menu-container"
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" aria-label="Мобильное меню"
                     data-menu-button>
-                    <svg width="40px" height="40px" aria-label="переклбчатель мобильного меню">
+                    <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
                         <use class="icon-cross" href="./images/symbol-defs_menu.svg#icon-close_24px"></use>
                         <use class="icon-menu" href="./images/symbol-defs_menu.svg#icon-menu_24px"></use>
                     </svg>
@@ -109,15 +116,15 @@
     <h2 class="title-hh">Чем мы занимаемся</h2>
     <ul class="what-we-do">
         <li class="item">
-            <img src="./images/box-1.jpg" alt="ноутбук" width="370">
+            <img srcset="./images/box-1.jpg 1x, ./images/box-1@2x.jpg 2x" src="./images/box-1.jpg" alt="ноутбук" width="370">
             <p class="wwd-thumb">Десктопные приложения</p>
         </li>
         <li class="item">
-            <img src="./images/box-2.jpg" alt="смартфон" width="370">
+            <img srcset="./images/box-2.jpg 1x, ./images/box-2@2x.jpg 2x" src="./images/box-2.jpg" alt="смартфон" width="370">
             <p class="wwd-thumb">Мобильные приложения</p>
         </li>
         <li class="item">
-            <img src="./images/box-3.jpg" alt="планшет" width="370">
+            <img srcset="./images/box-3.jpg 1x, ./images/box-3@2x.jpg 2x" src="./images/box-3.jpg" alt="планшет" width="370">
             <p class="wwd-thumb">Дизайнерские решения</p>
         </li>
     </ul>
@@ -130,10 +137,10 @@
             <ul class="our-team-ul">
                 <li class="item">
                     <picture>
-                        <source srcset="./images/team-card-1-270px.jpg x1, ./images/team-card-1-270px@2.jpg x2" media="(min-width: 1200px" />
-                        <source srcset="./images/team-card-1-354px.jpg x1, ./images/team-card-1-354px@2.jpg x2" media="(min-width: 768px" />
-                        <source srcset="./images/team-card-1-450px.jpg x1, ./images/team-card-1-450px@2.jpg x2" media="(max-width: 767px" />
-                        <img src="./images/team-card-1-270px.jpg" alt="Product Designer" width="270px"/>
+                        <source srcset="./images/team-card-1-270px.jpg 1x, ./images/team-card-1-270px@2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/team-card-1-354px.jpg 1x, ./images/team-card-1-354px@2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/team-card-1-450px.jpg 1x, ./images/team-card-1-450px@2x.jpg 2x" media="(max-width: 767px)" />
+                        <img src="./images/team-card-1-450px.jpg" alt="Product Designer" />
                     </picture>
                     <h3 class="title">Игорь Демьяненко</h3>
                     <p class="p-team">Product Designer</p>
@@ -169,7 +176,15 @@
                     </ul>
                 </li>
                 <li class="item">
-                    <img src="./images/team-card-2.jpg" alt="Frontend Developer" width="270">
+                    <picture>
+                        <source srcset="./images/team-card-2-270px.jpg 1x, ./images/team-card-2-270px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/team-card-2-354px.jpg 1x, ./images/team-card-2-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/team-card-2-450px.jpg 1x, ./images/team-card-2-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/team-card-2-450px.jpg" alt="Frontend Developer" />
+                    </picture>
                     <h3 class="title">Ольга Репина</h3>
                     <p class="p-team">Frontend Developer</p>
                     <ul class="social">
@@ -204,7 +219,15 @@
                     </ul>
                 </li>
                 <li class="item">
-                    <img src="./images/team-card-3.jpg" alt="Marketing" width="270">
+                    <picture>
+                        <source srcset="./images/team-card-3-270px.jpg 1x, ./images/team-card-3-270px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/team-card-3-354px.jpg 1x, ./images/team-card-3-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/team-card-3-450px.jpg 1x, ./images/team-card-3-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/team-card-3-450px.jpg" alt="Marketing" />
+                    </picture>
                     <h3 class="title">Николай Тарасов</h3>
                     <p class="p-team">Marketing</p>
                     <ul class="social">
@@ -239,7 +262,15 @@
                     </ul>
                 </li>
                 <li class="item">
-                    <img src="./images/team-card-4.jpg" alt="UI Designer" width="270">
+                    <picture>
+                        <source srcset="./images/team-card-4-270px.jpg 1x, ./images/team-card-4-270px@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/team-card-4-354px.jpg 1x, ./images/team-card-4-354px@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/team-card-4-450px.jpg 1x, ./images/team-card-4-450px@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/team-card-4-450px.jpg" alt="UI Designer" />
+                    </picture>
                     <h3 class="title">Михаил Ермаков</h3>
                     <p class="p-team">UI Designer</p>
                     <ul class="social">
