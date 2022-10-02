@@ -5,7 +5,11 @@
     margin: 0;
     margin-top: 50px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 767px) {
         margin: -15px;
         margin-top: 45px;
 
@@ -16,9 +20,13 @@
         }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: -15px;
+        margin-top: 45px;
+
         li {
-                width: 226px;
-            }
+            margin: 15px;
+            width: 226px;
+        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -53,9 +61,4 @@
         color: $accentColor;
         outline: 1px solid $accentColor;
     }
-
-    // @media screen and (min-width: 480px) and (max-width: 767px) {
-    //     width: 210px;
-    //     margin: 15px;
-    // }
 }
