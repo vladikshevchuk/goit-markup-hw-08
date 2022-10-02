@@ -33,8 +33,12 @@
         margin-top: 65px;
 
         li {
-                width: 170px;
-            }        
+            width: 170px;
+        }
+
+        li+li {
+            margin-left: 30px;
+        }
     }
 }
 

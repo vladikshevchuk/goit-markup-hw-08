@@ -799,6 +799,9 @@ img {
   .company-box li {
     width: 170px;
   }
+  .company-box li + li {
+    margin-left: 30px;
+  }
 }
 
 .company-logo {
